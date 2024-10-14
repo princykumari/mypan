@@ -1,0 +1,137 @@
+_schema-version: 3.3.0
+ID: mypan
+description: A simple CAP project.
+version: 1.0.0
+modules:
+- name: mypan-srv
+  type: nodejs
+  path: gen/srv
+  requires:
+  - name: mypan-db
+  - name: uaa_mypan
+  provides:
+  - name: srv-api
+    properties:
+      srv-url: ${default-url}
+  parameters:
+    buildpack: nodejs_buildpack
+    readiness-health-check-http-endpoint: /health
+    readiness-health-check-type: http
+  build-parameters:
+    builder: npm
+- name: mypan-db-deployer
+  type: hdb
+  path: gen/db
+  requires:
+  - name: mypan-db
+  parameters:
+    buildpack: nodejs_buildpack
+- name: mypan-destination-content
+  type: com.sap.application.content
+  requires:
+  - name: mypan-destination-service
+    parameters:
+      content-target: true
+  - name: mypan_html_repo_host
+    parameters:
+      service-key:
+        name: mypan_html_repo_host-key
+  - name: uaa_mypan
+    parameters:
+      service-key:
+        name: uaa_mypan-key
+  parameters:
+    content:
+      instance:
+        destinations:
+        - Name: panapp_mypan_html_repo_host
+          ServiceInstanceName: mypan-html5-app-host-service
+          ServiceKeyName: mypan_html_repo_host-key
+          sap.cloud.service: panapp
+        - Authentication: OAuth2UserTokenExchange
+          Name: panapp_uaa_mypan
+          ServiceInstanceName: mypan-xsuaa-service
+          ServiceKeyName: uaa_mypan-key
+          sap.cloud.service: panapp
+        existing_destinations_policy: ignore
+  build-parameters:
+    no-source: true
+- name: mypan-app-content
+  type: com.sap.application.content
+  path: .
+  requires:
+  - name: mypan_html_repo_host
+    parameters:
+      content-target: true
+  build-parameters:
+    build-result: resources
+    requires:
+    - artifacts:
+      - project1.zip
+      name: project1
+      target-path: resources/
+- name: project1
+  type: html5
+  path: app/project1
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+resources:
+- name: mypan-db
+  type: com.sap.xs.hdi-container
+  parameters:
+    service: hana
+    service-plan: hdi-shared
+- name: mypan-destination-service
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      HTML5Runtime_enabled: true
+      init_data:
+        instance:
+          destinations:
+          - Authentication: NoAuthentication
+            Name: ui5
+            ProxyType: Internet
+            Type: HTTP
+            URL: https://ui5.sap.com
+          - Authentication: NoAuthentication
+            HTML5.DynamicDestination: true
+            HTML5.ForwardAuthToken: true
+            Name: mypan-srv-api
+            ProxyType: Internet
+            Type: HTTP
+            URL: ~{srv-api/srv-url}
+          existing_destinations_policy: update
+      version: 1.0.0
+    service: destination
+    service-name: mypan-destination-service
+    service-plan: lite
+  requires:
+  - name: srv-api
+- name: mypan_html_repo_host
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-name: mypan-html5-app-host-service
+    service-plan: app-host
+- name: uaa_mypan
+  type: org.cloudfoundry.managed-service
+  parameters:
+    path: ./xs-security.json
+    service: xsuaa
+    service-name: mypan-xsuaa-service
+    service-plan: application
+parameters:
+  deploy_mode: html5-repo
+  enable-parallel-deployments: true
+build-parameters:
+  before-all:
+  - builder: custom
+    commands:
+    - npm ci
+    - npx cds build --production
