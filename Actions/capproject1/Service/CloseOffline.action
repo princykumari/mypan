@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.OfflineOData.Close",
+    "Service": "/mdkextension/Services/capproject1.service",
+    "Force": true,
+    "ActionResult": {
+        "_Name": "close"
+    },
+    "OnSuccess": "/mdkextension/Actions/capproject1/Service/CloseOfflineSuccessMessage.action",
+    "OnFailure": "/mdkextension/Actions/capproject1/Service/CloseOfflineFailureMessage.action"
+}

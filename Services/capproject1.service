@@ -1,0 +1,12 @@
+{
+    "DestinationName": "capproject1",
+    "OfflineEnabled": true,
+    "LanguageURLParam": "",
+    "OnlineOptions": {},
+    "OfflineOptions": {
+	"StoreParameters": {}
+},
+    "PathSuffix": "",
+    "SourceType": "Mobile",
+    "ServiceUrl":""
+}

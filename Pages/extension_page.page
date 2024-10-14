@@ -1,0 +1,108 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"Target": {
+				"Service": "/mdkextension/Services/capproject1.service",
+				"EntitySet": "Header_table"
+			},
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.Extension",
+					"_Name": "SectionExtension0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Module": "ext_module",
+					"Control": "ext_control",
+					"Class": "ext_class"
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Extension",
+							"_Name": "FormCellExtension1",
+							"Module": "checkmodule",
+							"Control": "checkcontrol",
+							"Class": "checkclass",
+							"IsVisible": true,
+							"Separator": true
+						},
+						{
+							"Properties": {
+								"ServicePath": "https://24c690a9trial-dev-capproject1-srv.cfapps.us10-001.hana.ondemand.com/odata/v4/whatsapp",
+								"EntitySet": "Header_table"
+							},
+							"_Type": "Control.Type.FormCell.Extension",
+							"DataSubscriptions": [],
+							"Target": {
+								"Service": "/mdkextension/Services/capproject1.service",
+								"EntitySet": "Header_table",
+								"ReadLink": "{@odata.readLink}",
+								"ServerSidePaging": false
+							},
+							"_Name": "FormCellExtension0",
+							"Module": "ext_module",
+							"Control": "ext_control",
+							"Class": "ext_class",
+							"OnPress": "/mdkextension/Actions/tomain.action",
+							"IsVisible": true,
+							"Separator": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				},
+				{
+					"_Type": "Section.Type.Extension",
+					"_Name": "SectionExtension1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Module": "checkmodule",
+					"Control": "checkcontrol",
+					"Class": "checkclass"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "extension_page",
+	"Caption": "extension_page",
+	"PrefersLargeCaption": true
+}

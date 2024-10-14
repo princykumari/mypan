@@ -1,0 +1,9 @@
+{
+    "Service": "/mdkextension/Services/capproject1.service",
+    "_Type": "Action.Type.OfflineOData.Upload",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnSuccess": "/mdkextension/Actions/capproject1/Service/DownloadStartedMessage.action",
+    "OnFailure": "/mdkextension/Actions/capproject1/Service/SyncFailureMessage.action"
+}

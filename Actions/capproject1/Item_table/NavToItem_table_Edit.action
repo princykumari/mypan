@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/mdkextension/Pages/capproject1_Item_table/Item_table_Edit.page",
+    "_Type": "Action.Type.Navigation"
+}

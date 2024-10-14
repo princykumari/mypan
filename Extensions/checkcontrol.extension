@@ -1,0 +1,7 @@
+{
+	"_Type": "Register.Type.ExtensionControl",
+	"Module": "checkmodule",
+	"Control": "checkcontrol",
+	"Class": "checkclass",
+	"Display": "sap-icon://laptop"
+}

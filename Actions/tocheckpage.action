@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "tocheckpage"
+	},
+	"PageToOpen": "/mdkextension/Pages/checkpage.page"
+}

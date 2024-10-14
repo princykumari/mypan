@@ -1,0 +1,19 @@
+{
+    "Service": "/mdkextension/Services/capproject1.service",
+    "DefiningRequests": [{
+            "Name": "Header_table",
+            "Query": "Header_table"
+        },
+        {
+            "Name": "Item_table",
+            "Query": "Item_table"
+        }
+    ],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnFailure": "/mdkextension/Actions/capproject1/Service/InitializeOfflineFailureMessage.action"
+}

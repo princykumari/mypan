@@ -1,0 +1,13 @@
+{
+    "Target": {
+        "EntitySet": "Item_table",
+        "Service": "/mdkextension/Services/capproject1.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "OnSuccess": "/mdkextension/Actions/DeleteEntitySuccessMessage.action",
+    "OnFailure": "/mdkextension/Actions/DeleteEntityFailureMessage.action",
+    "ActionResult": {
+        "_Name": "delete"
+    },
+    "_Type": "Action.Type.ODataService.DeleteEntity"
+}

@@ -1,0 +1,18 @@
+{
+    "Service": "/mdkextension/Services/capproject1.service",
+    "DefiningRequests": [{
+            "Name": "Header_table",
+            "Query": "Header_table"
+        },
+        {
+            "Name": "Item_table",
+            "Query": "Item_table"
+        }
+    ],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/mdkextension/Actions/capproject1/Service/SyncFailureMessage.action",
+    "OnSuccess": "/mdkextension/Rules/capproject1/ErrorArchive_CheckForSyncError.js"
+}

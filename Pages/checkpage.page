@@ -1,0 +1,65 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Extension",
+							"_Name": "FormCellExtension0",
+							"Module": "checkmodule",
+							"Control": "checkcontrol",
+							"Class": "checkclass",
+							"IsVisible": true,
+							"Separator": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				},
+				{
+					"_Type": "Section.Type.Extension",
+					"_Name": "SectionExtension0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Module": "ext_module",
+					"Control": "ext_control",
+					"Class": "ext_class"
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "checkpage",
+	"Caption": "checkpage",
+	"PrefersLargeCaption": true
+}

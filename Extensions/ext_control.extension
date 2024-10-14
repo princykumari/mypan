@@ -1,0 +1,6 @@
+{
+	"_Type": "Register.Type.ExtensionControl",
+	"Module": "ext_module",
+	"Control": "ext_control",
+	"Class": "ext_class"
+}

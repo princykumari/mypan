@@ -1,0 +1,12 @@
+{
+    "PopoverItems": [{
+            "Title": "Add Item_table",
+            "OnPress": "/mdkextension/Actions/capproject1/Header_table/NavToHeader_table_CreateItem_table.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/mdkextension/Rules/capproject1/Header_table/Header_table_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}
