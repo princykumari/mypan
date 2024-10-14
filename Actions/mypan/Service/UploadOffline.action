@@ -1,0 +1,9 @@
+{
+    "Service": "/mypanmdk/Services/mypan.service",
+    "_Type": "Action.Type.OfflineOData.Upload",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnSuccess": "/mypanmdk/Actions/mypan/Service/DownloadStartedMessage.action",
+    "OnFailure": "/mypanmdk/Actions/mypan/Service/SyncFailureMessage.action"
+}

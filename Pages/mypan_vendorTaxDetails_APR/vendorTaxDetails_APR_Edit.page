@@ -1,0 +1,73 @@
+{
+	"Caption": "$(L,Update_vendorTaxDetails_APR_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/mypanmdk/Services/mypan.service",
+		"EntitySet": "vendorTaxDetails_APR",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/mypanmdk/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/mypanmdk/Actions/mypan/vendorTaxDetails_APR/vendorTaxDetails_APR_UpdateEntity.action"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "Proposed_Vendor_Code",
+							"_Name": "Proposed_Vendor_Code",
+							"Value": "{Proposed_Vendor_Code}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "PAN_Number",
+							"_Name": "PAN_Number",
+							"Value": "{PAN_Number}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "Item_Code",
+							"_Name": "Item_Code",
+							"Value": "{Item_Code}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "name",
+							"_Name": "name",
+							"Value": "{name}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "value",
+							"_Name": "value",
+							"Value": "{value}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "vendorTaxDetails_APR_Edit",
+	"PrefersLargeCaption": true
+}

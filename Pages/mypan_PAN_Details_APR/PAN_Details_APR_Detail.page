@@ -1,0 +1,694 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/mypanmdk/Services/mypan.service",
+		"EntitySet": "PAN_Details_APR",
+		"QueryOptions": "$expand=tab1tovendor_data&$filter=PAN_Number eq '{PAN_Number}'"
+	},
+	"Controls": [
+		{
+			"DataSubscriptions": [
+				"PAN_WEB_EVENT_APR",
+				"PAN_TYPE_APR",
+				"PAN_WORKFLOW_HISTORY_APR",
+				"PAN_attachments_APR",
+				"PAN_vendor_data_APR",
+				"PAN_Comments_APR"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Subhead": "{PAN_Number}",
+						"Footnote": "{SBU}",
+						"Description": "{SBG}",
+						"StatusText": "{BUORPurchasing_Group}",
+						"SubstatusText": "{Plant_Code}",
+						"HeadlineText": "{task_id}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"Visible": true
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{PAN_Number}",
+							"_Name": "KeyValue0",
+							"KeyName": "PAN_Number",
+							"Visible": true
+						},
+						{
+							"Value": "{SBG}",
+							"_Name": "KeyValue1",
+							"KeyName": "SBG",
+							"Visible": true
+						},
+						{
+							"Value": "{SBU}",
+							"_Name": "KeyValue2",
+							"KeyName": "SBU",
+							"Visible": true
+						},
+						{
+							"Value": "{BUORPurchasing_Group}",
+							"_Name": "KeyValue3",
+							"KeyName": "BUORPurchasing_Group",
+							"Visible": true
+						},
+						{
+							"Value": "{Plant_Code}",
+							"_Name": "KeyValue4",
+							"KeyName": "Plant_Code",
+							"Visible": true
+						},
+						{
+							"Value": "{Project_Description}",
+							"_Name": "KeyValue5",
+							"KeyName": "Project_Description",
+							"Visible": true
+						},
+						{
+							"Value": "{PR_NumberBKTsBKT}",
+							"_Name": "KeyValue6",
+							"KeyName": "PR_NumberBKTsBKT",
+							"Visible": true
+						},
+						{
+							"Value": "{Subject_of_ProposalOROrder}",
+							"_Name": "KeyValue7",
+							"KeyName": "Subject_of_ProposalOROrder",
+							"Visible": true
+						},
+						{
+							"Value": "{Previous_PAN_References}",
+							"_Name": "KeyValue8",
+							"KeyName": "Previous_PAN_References",
+							"Visible": true
+						},
+						{
+							"Value": "{Split_OrderORNo_of_vendors}",
+							"_Name": "KeyValue9",
+							"KeyName": "Split_OrderORNo_of_vendors",
+							"Visible": true
+						},
+						{
+							"Value": "{SOP_Type}",
+							"_Name": "KeyValue10",
+							"KeyName": "SOP_Type",
+							"Visible": true
+						},
+						{
+							"Value": "{Order_Type_OR_Document_tyFuuidpe}",
+							"_Name": "KeyValue11",
+							"KeyName": "Order_Type_OR_Document_tyFuuidpe",
+							"Visible": true
+						},
+						{
+							"Value": "{Asset_Type}",
+							"_Name": "KeyValue12",
+							"KeyName": "Asset_Type",
+							"Visible": true
+						},
+						{
+							"Value": "{Nature_of_Transaction}",
+							"_Name": "KeyValue13",
+							"KeyName": "Nature_of_Transaction",
+							"Visible": true
+						},
+						{
+							"Value": "{Order_Location_OR_Plant}",
+							"_Name": "KeyValue14",
+							"KeyName": "Order_Location_OR_Plant",
+							"Visible": true
+						},
+						{
+							"Value": "{Base_line_spend}",
+							"_Name": "KeyValue15",
+							"KeyName": "Base_line_spend",
+							"Visible": true
+						},
+						{
+							"Value": "{Project_CurrencyORBase_Currency}",
+							"_Name": "KeyValue16",
+							"KeyName": "Project_CurrencyORBase_Currency",
+							"Visible": true
+						},
+						{
+							"Value": "{Order_CurrencyORBid_currency}",
+							"_Name": "KeyValue17",
+							"KeyName": "Order_CurrencyORBid_currency",
+							"Visible": true
+						},
+						{
+							"Value": "{Final_proposed_Value}",
+							"_Name": "KeyValue18",
+							"KeyName": "Final_proposed_Value",
+							"Visible": true
+						},
+						{
+							"Value": "{Savings_achieved_btw_initial_and_final_quote}",
+							"_Name": "KeyValue19",
+							"KeyName": "Savings_achieved_btw_initial_and_final_quote",
+							"Visible": true
+						},
+						{
+							"Value": "{Savings_against_base_line_spend_of_RFP}",
+							"_Name": "KeyValue20",
+							"KeyName": "Savings_against_base_line_spend_of_RFP",
+							"Visible": true
+						},
+						{
+							"Value": "{Number_of_Vendors_Shortlisted_for_RFP}",
+							"_Name": "KeyValue21",
+							"KeyName": "Number_of_Vendors_Shortlisted_for_RFP",
+							"Visible": true
+						},
+						{
+							"Value": "{Number_of_Vendors_Technically_Qualified}",
+							"_Name": "KeyValue22",
+							"KeyName": "Number_of_Vendors_Technically_Qualified",
+							"Visible": true
+						},
+						{
+							"Value": "{Required_at_Site_Date}",
+							"_Name": "KeyValue23",
+							"KeyName": "Required_at_Site_Date",
+							"Visible": true
+						},
+						{
+							"Value": "{RFP_Number}",
+							"_Name": "KeyValue24",
+							"KeyName": "RFP_Number",
+							"Visible": true
+						},
+						{
+							"Value": "{RFP_Publish_Date}",
+							"_Name": "KeyValue25",
+							"KeyName": "RFP_Publish_Date",
+							"Visible": true
+						},
+						{
+							"Value": "{Time_Taken_for_FinalizationDASHIn_DAYS}",
+							"_Name": "KeyValue26",
+							"KeyName": "Time_Taken_for_FinalizationDASHIn_DAYS",
+							"Visible": true
+						},
+						{
+							"Value": "{status}",
+							"_Name": "KeyValue27",
+							"KeyName": "status",
+							"Visible": true
+						},
+						{
+							"Value": "{statusInd}",
+							"_Name": "KeyValue28",
+							"KeyName": "statusInd",
+							"Visible": true
+						},
+						{
+							"Value": "{created_by}",
+							"_Name": "KeyValue29",
+							"KeyName": "created_by",
+							"Visible": true
+						},
+						{
+							"Value": "{task_id}",
+							"_Name": "KeyValue30",
+							"KeyName": "task_id",
+							"Visible": true
+						},
+						{
+							"Value": "{type}",
+							"_Name": "KeyValue31",
+							"KeyName": "type",
+							"Visible": true
+						},
+						{
+							"Value": "{status_a}",
+							"_Name": "KeyValue32",
+							"KeyName": "status_a",
+							"Visible": true
+						},
+						{
+							"Value": "{switch_control}",
+							"_Name": "KeyValue33",
+							"KeyName": "switch_control",
+							"Visible": true
+						},
+						{
+							"Value": "{ProjectId}",
+							"_Name": "KeyValue34",
+							"KeyName": "ProjectId",
+							"Visible": true
+						},
+						{
+							"Value": "{number_of_vendors_invited}",
+							"_Name": "KeyValue35",
+							"KeyName": "number_of_vendors_invited",
+							"Visible": true
+						},
+						{
+							"Value": "{total_levels_of_approval}",
+							"_Name": "KeyValue36",
+							"KeyName": "total_levels_of_approval",
+							"Visible": true
+						},
+						{
+							"Value": "{Current_level_of_approval}",
+							"_Name": "KeyValue37",
+							"KeyName": "Current_level_of_approval",
+							"Visible": true
+						},
+						{
+							"Value": "{Sap_workitem_id}",
+							"_Name": "KeyValue38",
+							"KeyName": "Sap_workitem_id",
+							"Visible": true
+						},
+						{
+							"Value": "{Comments}",
+							"_Name": "KeyValue39",
+							"KeyName": "Comments",
+							"Visible": true
+						},
+						{
+							"Value": "{submitted_by}",
+							"_Name": "KeyValue40",
+							"KeyName": "submitted_by",
+							"Visible": true
+						},
+						{
+							"Value": "{submitted_date}",
+							"_Name": "KeyValue41",
+							"KeyName": "submitted_date",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				},
+				{
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader0",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "tab1totab2"
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"EntitySet": "{@odata.readLink}/tab1totab2",
+						"Service": "/mypanmdk/Services/mypan.service"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No record found!",
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"ObjectCell": {
+						"Title": "{idd}",
+						"Subhead": "{PAN_Number}",
+						"Footnote": "{number}",
+						"Description": "{eventNo}",
+						"StatusText": "{date}",
+						"SubstatusText": "{numberOfVendorsParticipated}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "DisclosureIndicator",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"ImageIsCircular": true
+						},
+						"OnPress": "/mypanmdk/Actions/mypan/PAN_WEB_EVENT_APR/NavToPAN_WEB_EVENT_APR_Detail.action",
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						}
+					},
+					"HighlightSelectedItem": false
+				},
+				{
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader1",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "tab1totab3"
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"EntitySet": "{@odata.readLink}/tab1totab3",
+						"Service": "/mypanmdk/Services/mypan.service"
+					},
+					"_Name": "SectionObjectTable1",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No record found!",
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"ObjectCell": {
+						"Title": "{idd}",
+						"Subhead": "{PAN_Number}",
+						"Footnote": "{required}",
+						"Description": "{typeNo}",
+						"StatusText": "{submittedOn}",
+						"SubstatusText": "{receivedOn}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "DisclosureIndicator",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"ImageIsCircular": true
+						},
+						"OnPress": "/mypanmdk/Actions/mypan/PAN_TYPE_APR/NavToPAN_TYPE_APR_Detail.action",
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						}
+					},
+					"HighlightSelectedItem": false
+				},
+				{
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader2",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "tab1toWORKFLOW_HISTORY"
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"EntitySet": "{@odata.readLink}/tab1toWORKFLOW_HISTORY",
+						"Service": "/mypanmdk/Services/mypan.service"
+					},
+					"_Name": "SectionObjectTable2",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No record found!",
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"ObjectCell": {
+						"Title": "{Title}",
+						"Subhead": "{idd}",
+						"Footnote": "{Employee_ID}",
+						"Description": "{PAN_Number}",
+						"StatusText": "{level}",
+						"SubstatusText": "{Approved_by}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "DisclosureIndicator",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"ImageIsCircular": true
+						},
+						"OnPress": "/mypanmdk/Actions/mypan/PAN_WORKFLOW_HISTORY_APR/NavToPAN_WORKFLOW_HISTORY_APR_Detail.action",
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						}
+					},
+					"HighlightSelectedItem": false
+				},
+				{
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader3",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "tab1topdf"
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"EntitySet": "{@odata.readLink}/tab1topdf",
+						"Service": "/mypanmdk/Services/mypan.service"
+					},
+					"_Name": "SectionObjectTable3",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No record found!",
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"ObjectCell": {
+						"Title": "{fileName}",
+						"Subhead": "{createdAt}",
+						"Footnote": "{modifiedAt}",
+						"Description": "{createdBy}",
+						"StatusText": "{modifiedBy}",
+						"SubstatusText": "{PAN_Number}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "DisclosureIndicator",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "/mypanmdk/Services/mypan.service/{@odata.readLink}/content"
+								}
+							],
+							"ImageIsCircular": false,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"ImageIsCircular": true
+						},
+						"OnPress": "/mypanmdk/Actions/mypan/PAN_attachments_APR/NavToPAN_attachments_APR_Detail.action",
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						}
+					},
+					"HighlightSelectedItem": false
+				},
+				{
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader4",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "tab1tovendor_data"
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"EntitySet": "{@odata.readLink}/tab1tovendor_data",
+						"Service": "/mypanmdk/Services/mypan.service"
+					},
+					"_Name": "SectionObjectTable4",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No record found!",
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"ObjectCell": {
+						"Title": "{Vendor_Name}",
+						"Subhead": "{Proposed_Vendor_Code}",
+						"Footnote": "{Awarded_Vendor}",
+						"Description": "{PAN_Number}",
+						"StatusText": "{Vendor_Location}",
+						"SubstatusText": "{Technically_Approved}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "DisclosureIndicator",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"ImageIsCircular": true
+						},
+						"OnPress": "/mypanmdk/Actions/mypan/PAN_vendor_data_APR/NavToPAN_vendor_data_APR_Detail.action",
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						}
+					},
+					"HighlightSelectedItem": false
+				},
+				{
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader5",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "tab1tocom"
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"EntitySet": "{@odata.readLink}/tab1tocom",
+						"Service": "/mypanmdk/Services/mypan.service"
+					},
+					"_Name": "SectionObjectTable5",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No record found!",
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"ObjectCell": {
+						"Title": "{createdAt}",
+						"Subhead": "{createdBy}",
+						"Footnote": "{modifiedBy}",
+						"Description": "{modifiedAt}",
+						"StatusText": "{PAN_Number}",
+						"SubstatusText": "{user}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "DisclosureIndicator",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"ImageIsCircular": true
+						},
+						"OnPress": "/mypanmdk/Actions/mypan/PAN_Comments_APR/NavToPAN_Comments_APR_Detail.action",
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": []
+						}
+					},
+					"HighlightSelectedItem": false
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PAN_Details_APR_Detail",
+	"Caption": "$(L,PAN_Details_APR_Detail)",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Edit",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/mypanmdk/Actions/mypan/PAN_Details_APR/NavToPAN_Details_APR_Edit.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "More",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/mypanmdk/Actions/mypan/PAN_Details_APR/PAN_Details_APR_DetailPopover.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

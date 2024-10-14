@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/mypanmdk/Pages/mypan_PAN_vendor_data_APR/PAN_vendor_data_APR_Edit.page",
+    "_Type": "Action.Type.Navigation"
+}

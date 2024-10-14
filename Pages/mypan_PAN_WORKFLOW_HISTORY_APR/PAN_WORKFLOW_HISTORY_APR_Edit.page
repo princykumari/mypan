@@ -1,0 +1,132 @@
+{
+	"Caption": "$(L,Update_PAN_WORKFLOW_HISTORY_APR_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/mypanmdk/Services/mypan.service",
+		"EntitySet": "PAN_WORKFLOW_HISTORY_APR",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/mypanmdk/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/mypanmdk/Actions/mypan/PAN_WORKFLOW_HISTORY_APR/PAN_WORKFLOW_HISTORY_APR_UpdateEntity.action"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "idd",
+							"_Name": "idd",
+							"Value": "{idd}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "PAN_Number",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"PickerItems": {
+								"DisplayValue": "{PAN_Number}",
+								"ReturnValue": "{PAN_Number}",
+								"Target": {
+									"EntitySet": "PAN_Details_APR",
+									"Service": "/mypanmdk/Services/mypan.service"
+								}
+							},
+							"Value": "{PAN_Number}",
+							"_Name": "PAN_Number",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"IsEditable": false
+						},
+						{
+							"Caption": "Employee_ID",
+							"_Name": "Employee_ID",
+							"Value": "{Employee_ID}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "level",
+							"_Name": "level",
+							"Value": "{level}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Approved_by",
+							"_Name": "Approved_by",
+							"Value": "{Approved_by}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Employee_Name",
+							"_Name": "Employee_Name",
+							"Value": "{Employee_Name}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Title",
+							"_Name": "Title",
+							"Value": "{Title}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Notification_Status",
+							"_Name": "Notification_Status",
+							"Value": "{Notification_Status}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Result",
+							"_Name": "Result",
+							"Value": "{Result}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Begin_DateAND_Time",
+							"_Name": "Begin_DateAND_Time",
+							"Value": "{Begin_DateAND_Time}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "End_DateAND_Time",
+							"_Name": "End_DateAND_Time",
+							"Value": "{End_DateAND_Time}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Days_Taken",
+							"_Name": "Days_Taken",
+							"Value": "{Days_Taken}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Remarks",
+							"_Name": "Remarks",
+							"Value": "{Remarks}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PAN_WORKFLOW_HISTORY_APR_Edit",
+	"PrefersLargeCaption": true
+}

@@ -1,0 +1,17 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "PAN_Payment_Method_Drop_APR",
+        "Service": "/mypanmdk/Services/mypan.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "Payment_method": "#Control:Payment_method/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/mypanmdk/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/mypanmdk/Actions/UpdateEntityFailureMessage.action"
+}

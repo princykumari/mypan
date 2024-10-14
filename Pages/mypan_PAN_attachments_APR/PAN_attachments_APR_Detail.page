@@ -1,0 +1,96 @@
+{
+	"Caption": "$(L,PAN_attachments_APR_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/mypanmdk/Services/mypan.service",
+		"EntitySet": "PAN_attachments_APR",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/mypanmdk/Actions/mypan/PAN_attachments_APR/NavToPAN_attachments_APR_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/mypanmdk/Actions/mypan/PAN_attachments_APR/PAN_attachments_APR_DetailPopover.action",
+				"Position": "Right",
+				"Caption": "More"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "/mypanmdk/Services/mypan.service/{@odata.readLink}/content",
+						"HeadlineText": "{fileName}",
+						"Subhead": "{createdAt}",
+						"BodyText": "",
+						"Footnote": "{modifiedAt}",
+						"Description": "{createdBy}",
+						"StatusText": "{modifiedBy}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{PAN_Number}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Created On",
+							"Value": "{createdAt}"
+						},
+						{
+							"KeyName": "Created By",
+							"Value": "{createdBy}"
+						},
+						{
+							"KeyName": "Changed On",
+							"Value": "{modifiedAt}"
+						},
+						{
+							"KeyName": "Changed By",
+							"Value": "{modifiedBy}"
+						},
+						{
+							"KeyName": "PAN_Number",
+							"Value": "{PAN_Number}"
+						},
+						{
+							"KeyName": "mediaType",
+							"Value": "{mediaType}"
+						},
+						{
+							"KeyName": "fileName",
+							"Value": "{fileName}"
+						},
+						{
+							"KeyName": "size",
+							"Value": "{size}"
+						},
+						{
+							"KeyName": "url",
+							"Value": "{url}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PAN_attachments_APR_Detail",
+	"PrefersLargeCaption": true
+}

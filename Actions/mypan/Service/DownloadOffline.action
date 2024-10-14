@@ -1,0 +1,58 @@
+{
+    "Service": "/mypanmdk/Services/mypan.service",
+    "DefiningRequests": [{
+            "Name": "PAN_attachments_APR",
+            "Query": "PAN_attachments_APR"
+        },
+        {
+            "Name": "PAN_Comments_APR",
+            "Query": "PAN_Comments_APR"
+        },
+        {
+            "Name": "PAN_Details_APR",
+            "Query": "PAN_Details_APR"
+        },
+        {
+            "Name": "PAN_Payment_Method_Drop_APR",
+            "Query": "PAN_Payment_Method_Drop_APR"
+        },
+        {
+            "Name": "PAN_PAYMENT_TERM_DETAILS_APR",
+            "Query": "PAN_PAYMENT_TERM_DETAILS_APR"
+        },
+        {
+            "Name": "PAN_PRICE_DETAILS_APR",
+            "Query": "PAN_PRICE_DETAILS_APR"
+        },
+        {
+            "Name": "PAN_TYPE_APR",
+            "Query": "PAN_TYPE_APR"
+        },
+        {
+            "Name": "PAN_vendor_data_APR",
+            "Query": "PAN_vendor_data_APR"
+        },
+        {
+            "Name": "PAN_vendor_response_APR",
+            "Query": "PAN_vendor_response_APR"
+        },
+        {
+            "Name": "PAN_WEB_EVENT_APR",
+            "Query": "PAN_WEB_EVENT_APR"
+        },
+        {
+            "Name": "PAN_WORKFLOW_HISTORY_APR",
+            "Query": "PAN_WORKFLOW_HISTORY_APR"
+        },
+        {
+            "Name": "vendorTaxDetails_APR",
+            "Query": "vendorTaxDetails_APR"
+        }
+    ],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/mypanmdk/Actions/mypan/Service/SyncFailureMessage.action",
+    "OnSuccess": "/mypanmdk/Rules/mypan/ErrorArchive_CheckForSyncError.js"
+}

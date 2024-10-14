@@ -1,0 +1,26 @@
+{
+    "ParentLink": {
+        "Property": "tab1topdf",
+        "Target": {
+            "EntitySet": "PAN_Details_APR",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/mypanmdk/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/mypanmdk/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "PAN_Number": "#Control:PAN_Number/#SelectedValue",
+        "mediaType": "#Control:mediaType/#Value",
+        "fileName": "#Control:fileName/#Value",
+        "size": "#Control:size/#Value",
+        "url": "#Control:url/#Value"
+    },
+    "Target": {
+        "EntitySet": "PAN_attachments_APR",
+        "Service": "/mypanmdk/Services/mypan.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

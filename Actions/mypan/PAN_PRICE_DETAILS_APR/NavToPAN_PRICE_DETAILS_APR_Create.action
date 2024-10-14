@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/mypanmdk/Pages/mypan_PAN_PRICE_DETAILS_APR/PAN_PRICE_DETAILS_APR_Create.page",
+    "_Type": "Action.Type.Navigation"
+}

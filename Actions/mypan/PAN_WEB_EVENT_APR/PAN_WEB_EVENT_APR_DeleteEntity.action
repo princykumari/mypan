@@ -1,0 +1,13 @@
+{
+    "Target": {
+        "EntitySet": "PAN_WEB_EVENT_APR",
+        "Service": "/mypanmdk/Services/mypan.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "OnSuccess": "/mypanmdk/Actions/DeleteEntitySuccessMessage.action",
+    "OnFailure": "/mypanmdk/Actions/DeleteEntityFailureMessage.action",
+    "ActionResult": {
+        "_Name": "delete"
+    },
+    "_Type": "Action.Type.ODataService.DeleteEntity"
+}

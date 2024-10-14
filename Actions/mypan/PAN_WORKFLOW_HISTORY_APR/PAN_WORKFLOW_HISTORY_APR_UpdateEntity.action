@@ -1,0 +1,29 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "PAN_WORKFLOW_HISTORY_APR",
+        "Service": "/mypanmdk/Services/mypan.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "idd": "#Control:idd/#Value",
+        "PAN_Number": "#Control:PAN_Number/#SelectedValue",
+        "Employee_ID": "#Control:Employee_ID/#Value",
+        "level": "#Control:level/#Value",
+        "Approved_by": "#Control:Approved_by/#Value",
+        "Employee_Name": "#Control:Employee_Name/#Value",
+        "Title": "#Control:Title/#Value",
+        "Notification_Status": "#Control:Notification_Status/#Value",
+        "Result": "#Control:Result/#Value",
+        "Begin_DateAND_Time": "#Control:Begin_DateAND_Time/#Value",
+        "End_DateAND_Time": "#Control:End_DateAND_Time/#Value",
+        "Days_Taken": "#Control:Days_Taken/#Value",
+        "Remarks": "#Control:Remarks/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/mypanmdk/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/mypanmdk/Actions/UpdateEntityFailureMessage.action"
+}

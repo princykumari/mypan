@@ -1,0 +1,96 @@
+{
+	"Caption": "$(L,Update_PAN_WEB_EVENT_APR_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/mypanmdk/Services/mypan.service",
+		"EntitySet": "PAN_WEB_EVENT_APR",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/mypanmdk/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/mypanmdk/Actions/mypan/PAN_WEB_EVENT_APR/PAN_WEB_EVENT_APR_UpdateEntity.action"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "idd",
+							"_Name": "idd",
+							"Value": "{idd}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "PAN_Number",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"PickerItems": {
+								"DisplayValue": "{PAN_Number}",
+								"ReturnValue": "{PAN_Number}",
+								"Target": {
+									"EntitySet": "PAN_Details_APR",
+									"Service": "/mypanmdk/Services/mypan.service"
+								}
+							},
+							"Value": "{PAN_Number}",
+							"_Name": "PAN_Number",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"IsEditable": false
+						},
+						{
+							"Caption": "eventNo",
+							"_Name": "eventNo",
+							"Value": "{eventNo}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "number",
+							"_Name": "number",
+							"Value": "{number}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "date",
+							"_Name": "date",
+							"Value": "{date}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "numberOfVendorsParticipated",
+							"_Name": "numberOfVendorsParticipated",
+							"Value": "{numberOfVendorsParticipated}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "l1AmountObtained",
+							"_Name": "l1AmountObtained",
+							"Value": "{l1AmountObtained}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PAN_WEB_EVENT_APR_Edit",
+	"PrefersLargeCaption": true
+}

@@ -1,0 +1,112 @@
+{
+	"Caption": "$(L,PAN_WORKFLOW_HISTORY_APR_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/mypanmdk/Services/mypan.service",
+		"EntitySet": "PAN_WORKFLOW_HISTORY_APR",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/mypanmdk/Actions/mypan/PAN_WORKFLOW_HISTORY_APR/NavToPAN_WORKFLOW_HISTORY_APR_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/mypanmdk/Rules/mypan/PAN_WORKFLOW_HISTORY_APR/PAN_WORKFLOW_HISTORY_APR_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{Title}",
+						"Subhead": "{idd}",
+						"BodyText": "",
+						"Footnote": "{Employee_ID}",
+						"Description": "{PAN_Number}",
+						"StatusText": "{level}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{Approved_by}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "idd",
+							"Value": "{idd}"
+						},
+						{
+							"KeyName": "PAN_Number",
+							"Value": "{PAN_Number}"
+						},
+						{
+							"KeyName": "Employee_ID",
+							"Value": "{Employee_ID}"
+						},
+						{
+							"KeyName": "level",
+							"Value": "{level}"
+						},
+						{
+							"KeyName": "Approved_by",
+							"Value": "{Approved_by}"
+						},
+						{
+							"KeyName": "Employee_Name",
+							"Value": "{Employee_Name}"
+						},
+						{
+							"KeyName": "Title",
+							"Value": "{Title}"
+						},
+						{
+							"KeyName": "Notification_Status",
+							"Value": "{Notification_Status}"
+						},
+						{
+							"KeyName": "Result",
+							"Value": "{Result}"
+						},
+						{
+							"KeyName": "Begin_DateAND_Time",
+							"Value": "{Begin_DateAND_Time}"
+						},
+						{
+							"KeyName": "End_DateAND_Time",
+							"Value": "{End_DateAND_Time}"
+						},
+						{
+							"KeyName": "Days_Taken",
+							"Value": "{Days_Taken}"
+						},
+						{
+							"KeyName": "Remarks",
+							"Value": "{Remarks}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PAN_WORKFLOW_HISTORY_APR_Detail",
+	"PrefersLargeCaption": true
+}

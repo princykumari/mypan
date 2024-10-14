@@ -1,0 +1,32 @@
+{
+    "PopoverItems": [{
+            "Title": "Add PAN_WEB_EVENT_APR",
+            "OnPress": "/mypanmdk/Actions/mypan/PAN_Details_APR/NavToPAN_Details_APR_CreatePAN_WEB_EVENT_APR.action"
+        },
+        {
+            "Title": "Add PAN_TYPE_APR",
+            "OnPress": "/mypanmdk/Actions/mypan/PAN_Details_APR/NavToPAN_Details_APR_CreatePAN_TYPE_APR.action"
+        },
+        {
+            "Title": "Add PAN_WORKFLOW_HISTORY_APR",
+            "OnPress": "/mypanmdk/Actions/mypan/PAN_Details_APR/NavToPAN_Details_APR_CreatePAN_WORKFLOW_HISTORY_APR.action"
+        },
+        {
+            "Title": "Add PAN_attachments_APR",
+            "OnPress": "/mypanmdk/Actions/mypan/PAN_Details_APR/NavToPAN_Details_APR_CreatePAN_attachments_APR.action"
+        },
+        {
+            "Title": "Add PAN_vendor_data_APR",
+            "OnPress": "/mypanmdk/Actions/mypan/PAN_Details_APR/NavToPAN_Details_APR_CreatePAN_vendor_data_APR.action"
+        },
+        {
+            "Title": "Add PAN_Comments_APR",
+            "OnPress": "/mypanmdk/Actions/mypan/PAN_Details_APR/NavToPAN_Details_APR_CreatePAN_Comments_APR.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/mypanmdk/Rules/mypan/PAN_Details_APR/PAN_Details_APR_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

@@ -1,0 +1,389 @@
+{
+	"Caption": "$(L,PAN_vendor_data_APR_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/mypanmdk/Services/mypan.service",
+		"EntitySet": "PAN_vendor_data_APR",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/mypanmdk/Actions/mypan/PAN_vendor_data_APR/NavToPAN_vendor_data_APR_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/mypanmdk/Actions/mypan/PAN_vendor_data_APR/PAN_vendor_data_APR_DetailPopover.action",
+				"Position": "Right",
+				"Caption": "More"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{Vendor_Name}",
+						"Subhead": "{Proposed_Vendor_Code}",
+						"BodyText": "",
+						"Footnote": "{Awarded_Vendor}",
+						"Description": "{PAN_Number}",
+						"StatusText": "{Vendor_Location}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{Technically_Approved}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Proposed_Vendor_Code",
+							"Value": "{Proposed_Vendor_Code}"
+						},
+						{
+							"KeyName": "PAN_Number",
+							"Value": "{PAN_Number}"
+						},
+						{
+							"KeyName": "Awarded_Vendor",
+							"Value": "{Awarded_Vendor}"
+						},
+						{
+							"KeyName": "Vendor_Name",
+							"Value": "{Vendor_Name}"
+						},
+						{
+							"KeyName": "Vendor_Location",
+							"Value": "{Vendor_Location}"
+						},
+						{
+							"KeyName": "Technically_Approved",
+							"Value": "{Technically_Approved}"
+						},
+						{
+							"KeyName": "Client_Approved",
+							"Value": "{Client_Approved}"
+						},
+						{
+							"KeyName": "Original_quote",
+							"Value": "{Original_quote}"
+						},
+						{
+							"KeyName": "Final_Quote",
+							"Value": "{Final_Quote}"
+						},
+						{
+							"KeyName": "Order_amount_OR_Split_order_amount",
+							"Value": "{Order_amount_OR_Split_order_amount}"
+						},
+						{
+							"KeyName": "Discount_Amount",
+							"Value": "{Discount_Amount}"
+						},
+						{
+							"KeyName": "Discount_percentage",
+							"Value": "{Discount_percentage}"
+						},
+						{
+							"KeyName": "Rank",
+							"Value": "{Rank}"
+						},
+						{
+							"KeyName": "Proposed_Vendor_Name",
+							"Value": "{Proposed_Vendor_Name}"
+						},
+						{
+							"KeyName": "Supplier_Origin_State",
+							"Value": "{Supplier_Origin_State}"
+						},
+						{
+							"KeyName": "Destination_State_BKTShipDASHto_LocationBKT",
+							"Value": "{Destination_State_BKTShipDASHto_LocationBKT}"
+						},
+						{
+							"KeyName": "Vendor_GST_Number",
+							"Value": "{Vendor_GST_Number}"
+						},
+						{
+							"KeyName": "Vendor_CE_Score",
+							"Value": "{Vendor_CE_Score}"
+						},
+						{
+							"KeyName": "Vendor_CE_Date",
+							"Value": "{Vendor_CE_Date}"
+						},
+						{
+							"KeyName": "Vendor_PE_Score",
+							"Value": "{Vendor_PE_Score}"
+						},
+						{
+							"KeyName": "Vendor_PE_Date",
+							"Value": "{Vendor_PE_Date}"
+						},
+						{
+							"KeyName": "Vendor_Contact_PersonDASH1",
+							"Value": "{Vendor_Contact_PersonDASH1}"
+						},
+						{
+							"KeyName": "Vendor_Contact_PersonDASH2",
+							"Value": "{Vendor_Contact_PersonDASH2}"
+						},
+						{
+							"KeyName": "Technical_Committee_who_cleared_the_proposal",
+							"Value": "{Technical_Committee_who_cleared_the_proposal}"
+						},
+						{
+							"KeyName": "Commercial_Committee_who_cleared_the_proposal",
+							"Value": "{Commercial_Committee_who_cleared_the_proposal}"
+						},
+						{
+							"KeyName": "Vendor_References_to_be_displayed_in_Order",
+							"Value": "{Vendor_References_to_be_displayed_in_Order}"
+						},
+						{
+							"KeyName": "Shortlisted_Vendors_Response_summary",
+							"Value": "{Shortlisted_Vendors_Response_summary}"
+						},
+						{
+							"KeyName": "Order_Value_BKTIn_Project_CurrencyBKT",
+							"Value": "{Order_Value_BKTIn_Project_CurrencyBKT}"
+						},
+						{
+							"KeyName": "Order_Value_BKTIn_Bid_CurrencyBKT",
+							"Value": "{Order_Value_BKTIn_Bid_CurrencyBKT}"
+						},
+						{
+							"KeyName": "Vendor_Final_Quotation_Date",
+							"Value": "{Vendor_Final_Quotation_Date}"
+						},
+						{
+							"KeyName": "Vendor_Final_Quotation_Amount",
+							"Value": "{Vendor_Final_Quotation_Amount}"
+						},
+						{
+							"KeyName": "Project_CurrencyORBase_Currency",
+							"Value": "{Project_CurrencyORBase_Currency}"
+						},
+						{
+							"KeyName": "Order_CurrencyORBid_currency",
+							"Value": "{Order_CurrencyORBid_currency}"
+						},
+						{
+							"KeyName": "Incoterms",
+							"Value": "{Incoterms}"
+						},
+						{
+							"KeyName": "Number_of_Back_to_back_Terms_agreed_with_Vendor_as_per_GPC_OR_GCC",
+							"Value": "{Number_of_Back_to_back_Terms_agreed_with_Vendor_as_per_GPC_OR_GCC}"
+						},
+						{
+							"KeyName": "Details_of_deviated_or_better_terms_agreed_with_the_Vendor",
+							"Value": "{Details_of_deviated_or_better_terms_agreed_with_the_Vendor}"
+						},
+						{
+							"KeyName": "Market_Scenario_and_Demand",
+							"Value": "{Market_Scenario_and_Demand}"
+						},
+						{
+							"KeyName": "Companys_Position_and_Market_dynamics_of_this_purchase",
+							"Value": "{Companys_Position_and_Market_dynamics_of_this_purchase}"
+						},
+						{
+							"KeyName": "Should_Be_Cost_estimated",
+							"Value": "{Should_Be_Cost_estimated}"
+						},
+						{
+							"KeyName": "Highlights_of_this_proposal_and_Price_Justification_for_this_proposal",
+							"Value": "{Highlights_of_this_proposal_and_Price_Justification_for_this_proposal}"
+						},
+						{
+							"KeyName": "Price_Escalation_Agreed_if_any",
+							"Value": "{Price_Escalation_Agreed_if_any}"
+						},
+						{
+							"KeyName": "Particulars_of_any_Free_Service_OR_Supply_Guarantees_OR_Warrant_yfrom_Vendor",
+							"Value": "{Particulars_of_any_Free_Service_OR_Supply_Guarantees_OR_Warrant_yfrom_Vendor}"
+						},
+						{
+							"KeyName": "Transportation",
+							"Value": "{Transportation}"
+						},
+						{
+							"KeyName": "Logistics_Cost",
+							"Value": "{Logistics_Cost}"
+						},
+						{
+							"KeyName": "Delivery_Schedule",
+							"Value": "{Delivery_Schedule}"
+						},
+						{
+							"KeyName": "Tax_Details",
+							"Value": "{Tax_Details}"
+						},
+						{
+							"KeyName": "Additional_Remarks",
+							"Value": "{Additional_Remarks}"
+						},
+						{
+							"KeyName": "ABG",
+							"Value": "{ABG}"
+						},
+						{
+							"KeyName": "ABG_Value",
+							"Value": "{ABG_Value}"
+						},
+						{
+							"KeyName": "CPBG",
+							"Value": "{CPBG}"
+						},
+						{
+							"KeyName": "CPBG_Value",
+							"Value": "{CPBG_Value}"
+						},
+						{
+							"KeyName": "Scope_and_Responsibilities",
+							"Value": "{Scope_and_Responsibilities}"
+						},
+						{
+							"KeyName": "Commercial_Terms",
+							"Value": "{Commercial_Terms}"
+						},
+						{
+							"KeyName": "Compliance_Terms",
+							"Value": "{Compliance_Terms}"
+						},
+						{
+							"KeyName": "Others",
+							"Value": "{Others}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "vendtovenr",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{PAN_Number}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{Proposed_Vendor_Name}",
+						"Footnote": "{Supplier_Origin_State}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{Destination_State_BKTShipDASHto_LocationBKT}",
+						"Subhead": "{Proposed_Vendor_Code}",
+						"SubstatusText": "{Vendor_GST_Number}",
+						"OnPress": "/mypanmdk/Actions/mypan/PAN_vendor_response_APR/NavToPAN_vendor_response_APR_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/vendtovenr",
+						"Service": "/mypanmdk/Services/mypan.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "vendtoptd",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{iddd}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{Proposed_Vendor_Code}",
+						"Footnote": "{slNo}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{Payment_methord}",
+						"Subhead": "{PAN_Number}",
+						"SubstatusText": "{Percentage}",
+						"OnPress": "/mypanmdk/Actions/mypan/PAN_PAYMENT_TERM_DETAILS_APR/NavToPAN_PAYMENT_TERM_DETAILS_APR_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/vendtoptd",
+						"Service": "/mypanmdk/Services/mypan.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "vendtopd",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{Item_Code}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{Proposed_Vendor_Code}",
+						"Footnote": "{HSN_OR_SAC_Code}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{extendedPrice}",
+						"Subhead": "{PAN_Number}",
+						"SubstatusText": "{Item_Short_Description}",
+						"OnPress": "/mypanmdk/Actions/mypan/PAN_PRICE_DETAILS_APR/NavToPAN_PRICE_DETAILS_APR_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/vendtopd",
+						"Service": "/mypanmdk/Services/mypan.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"PAN_vendor_response_APR",
+				"PAN_PAYMENT_TERM_DETAILS_APR",
+				"PAN_PRICE_DETAILS_APR"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PAN_vendor_data_APR_Detail",
+	"PrefersLargeCaption": true
+}

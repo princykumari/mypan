@@ -1,0 +1,294 @@
+{
+	"Caption": "$(L,Update_PAN_Details_APR_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/mypanmdk/Services/mypan.service",
+		"EntitySet": "PAN_Details_APR",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/mypanmdk/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/mypanmdk/Actions/mypan/PAN_Details_APR/PAN_Details_APR_UpdateEntity.action"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "PAN_Number",
+							"_Name": "PAN_Number",
+							"Value": "{PAN_Number}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "SBG",
+							"_Name": "SBG",
+							"Value": "{SBG}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SBU",
+							"_Name": "SBU",
+							"Value": "{SBU}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BUORPurchasing_Group",
+							"_Name": "BUORPurchasing_Group",
+							"Value": "{BUORPurchasing_Group}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Plant_Code",
+							"_Name": "Plant_Code",
+							"Value": "{Plant_Code}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Project_Description",
+							"_Name": "Project_Description",
+							"Value": "{Project_Description}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PR_NumberBKTsBKT",
+							"_Name": "PR_NumberBKTsBKT",
+							"Value": "{PR_NumberBKTsBKT}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Subject_of_ProposalOROrder",
+							"_Name": "Subject_of_ProposalOROrder",
+							"Value": "{Subject_of_ProposalOROrder}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Previous_PAN_References",
+							"_Name": "Previous_PAN_References",
+							"Value": "{Previous_PAN_References}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Split_OrderORNo_of_vendors",
+							"_Name": "Split_OrderORNo_of_vendors",
+							"Value": "{Split_OrderORNo_of_vendors}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SOP_Type",
+							"_Name": "SOP_Type",
+							"Value": "{SOP_Type}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Order_Type_OR_Document_tyFuuidpe",
+							"_Name": "Order_Type_OR_Document_tyFuuidpe",
+							"Value": "{Order_Type_OR_Document_tyFuuidpe}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Asset_Type",
+							"_Name": "Asset_Type",
+							"Value": "{Asset_Type}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Nature_of_Transaction",
+							"_Name": "Nature_of_Transaction",
+							"Value": "{Nature_of_Transaction}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Order_Location_OR_Plant",
+							"_Name": "Order_Location_OR_Plant",
+							"Value": "{Order_Location_OR_Plant}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Base_line_spend",
+							"_Name": "Base_line_spend",
+							"Value": "{Base_line_spend}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Project_CurrencyORBase_Currency",
+							"_Name": "Project_CurrencyORBase_Currency",
+							"Value": "{Project_CurrencyORBase_Currency}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Order_CurrencyORBid_currency",
+							"_Name": "Order_CurrencyORBid_currency",
+							"Value": "{Order_CurrencyORBid_currency}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Final_proposed_Value",
+							"_Name": "Final_proposed_Value",
+							"Value": "{Final_proposed_Value}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Savings_achieved_btw_initial_and_final_quote",
+							"_Name": "Savings_achieved_btw_initial_and_final_quote",
+							"Value": "{Savings_achieved_btw_initial_and_final_quote}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Savings_against_base_line_spend_of_RFP",
+							"_Name": "Savings_against_base_line_spend_of_RFP",
+							"Value": "{Savings_against_base_line_spend_of_RFP}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Number_of_Vendors_Shortlisted_for_RFP",
+							"_Name": "Number_of_Vendors_Shortlisted_for_RFP",
+							"Value": "{Number_of_Vendors_Shortlisted_for_RFP}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Number_of_Vendors_Technically_Qualified",
+							"_Name": "Number_of_Vendors_Technically_Qualified",
+							"Value": "{Number_of_Vendors_Technically_Qualified}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Required_at_Site_Date",
+							"_Name": "Required_at_Site_Date",
+							"Value": "{Required_at_Site_Date}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "RFP_Number",
+							"_Name": "RFP_Number",
+							"Value": "{RFP_Number}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "RFP_Publish_Date",
+							"_Name": "RFP_Publish_Date",
+							"Value": "{RFP_Publish_Date}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Time_Taken_for_FinalizationDASHIn_DAYS",
+							"_Name": "Time_Taken_for_FinalizationDASHIn_DAYS",
+							"Value": "{Time_Taken_for_FinalizationDASHIn_DAYS}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "status",
+							"_Name": "status",
+							"Value": "{status}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "statusInd",
+							"_Name": "statusInd",
+							"Value": "{statusInd}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "created_by",
+							"_Name": "created_by",
+							"Value": "{created_by}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "task_id",
+							"_Name": "task_id",
+							"Value": "{task_id}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "type",
+							"_Name": "type",
+							"Value": "{type}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "status_a",
+							"_Name": "status_a",
+							"Value": "{status_a}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "switch_control",
+							"Caption": "switch_control",
+							"Value": "{switch_control}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "ProjectId",
+							"_Name": "ProjectId",
+							"Value": "{ProjectId}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "number_of_vendors_invited",
+							"_Name": "number_of_vendors_invited",
+							"Value": "{number_of_vendors_invited}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "total_levels_of_approval",
+							"_Name": "total_levels_of_approval",
+							"Value": "{total_levels_of_approval}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Current_level_of_approval",
+							"_Name": "Current_level_of_approval",
+							"Value": "{Current_level_of_approval}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Sap_workitem_id",
+							"_Name": "Sap_workitem_id",
+							"Value": "{Sap_workitem_id}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Comments",
+							"_Name": "Comments",
+							"Value": "{Comments}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "submitted_by",
+							"_Name": "submitted_by",
+							"Value": "{submitted_by}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "submitted_date",
+							"_Name": "submitted_date",
+							"Value": "{submitted_date}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PAN_Details_APR_Edit",
+	"PrefersLargeCaption": true
+}

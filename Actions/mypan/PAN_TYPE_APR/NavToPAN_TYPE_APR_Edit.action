@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/mypanmdk/Pages/mypan_PAN_TYPE_APR/PAN_TYPE_APR_Edit.page",
+    "_Type": "Action.Type.Navigation"
+}

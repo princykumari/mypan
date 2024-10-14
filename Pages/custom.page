@@ -1,0 +1,83 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
+			"Sections": [
+				{
+					"_Type": "Section.Type.KPISection",
+					"_Name": "SectionKPISection0",
+					"Visible": true,
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Styles": {
+						"TintColor": "KPISectionTintColor",
+						"BackgroundColor": "KPISectionBackgroundColor"
+					},
+					"KPIItems": [
+						{
+							"_Name": "KPIItem0",
+							"CaptionLabel": "20 minutes ago",
+							"MetricItems": [
+								{
+									"Value": "104",
+									"TrailingUnit": "°F"
+								}
+							]
+						},
+						{
+							"_Name": "KPIItem1",
+							"CaptionLabel": "Working Hours",
+							"MetricItems": [
+								{
+									"Value": "6",
+									"TrailingUnit": "h"
+								},
+								{
+									"Value": "59",
+									"TrailingUnit": "m"
+								}
+							]
+						},
+						{
+							"_Name": "KPIItem2",
+							"CaptionLabel": "Completed",
+							"MetricItems": [
+								{
+									"Value": "54",
+									"TrailingUnit": "%",
+									"_Name": "KPIItem2MetricItem0"
+								}
+							],
+							"ShowProgress": true,
+							"Progress": 0.7
+						},
+						{
+							"_Name": "KPIItem3",
+							"CaptionLabel": "Documents",
+							"MetricItems": [
+								{
+									"Value": "2"
+								}
+							],
+							"Icon": "/mypanmdk/Images/panda.png"
+						}
+					]
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "custom",
+	"Caption": "KPI section Page",
+	"PrefersLargeCaption": true
+}

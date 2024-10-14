@@ -1,0 +1,2 @@
+Pass:
+Generated bundle file /home/user/projects/mypanmdk/.build/mypanmdk/.build/uploadBundle.zip

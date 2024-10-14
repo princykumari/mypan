@@ -1,0 +1,74 @@
+{
+	"Caption": "$(L,PAN_vendor_response_APR)",
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/mypanmdk/Actions/mypan/PAN_vendor_response_APR/NavToPAN_vendor_response_APR_Create.action",
+				"Position": "Right",
+				"SystemItem": "Add"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Header": {
+						"UseTopPadding": false,
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{PAN_Number}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"OnPress": "/mypanmdk/Actions/mypan/PAN_vendor_response_APR/NavToPAN_vendor_response_APR_Detail.action",
+						"StatusImage": "",
+						"Title": "{Proposed_Vendor_Name}",
+						"Footnote": "{Supplier_Origin_State}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{Destination_State_BKTShipDASHto_LocationBKT}",
+						"Subhead": "{Proposed_Vendor_Code}",
+						"SubstatusText": "{Vendor_GST_Number}"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Item Search",
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"MinimumCharacterThreshold": 3
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "Loading more items, please wait..."
+					},
+					"Target": {
+						"EntitySet": "PAN_vendor_response_APR",
+						"Service": "/mypanmdk/Services/mypan.service",
+						"QueryOptions": ""
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Loading, please wait..."
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PAN_vendor_response_APR_List",
+	"PrefersLargeCaption": true
+}

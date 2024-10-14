@@ -1,0 +1,324 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/mypanmdk/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel"
+			},
+			{
+				"OnPress": "/mypanmdk/Actions/mypan/PAN_vendor_data_APR/PAN_vendor_data_APR_CreateEntity.action",
+				"Position": "Right",
+				"SystemItem": "Save"
+			}
+		]
+	},
+	"Caption": "$(L,Create_PAN_vendor_data_APR_Detail)",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "Proposed_Vendor_Code",
+							"_Name": "Proposed_Vendor_Code",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PAN_Number",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"PickerItems": {
+								"DisplayValue": "{PAN_Number}",
+								"ReturnValue": "{PAN_Number}",
+								"Target": {
+									"EntitySet": "PAN_Details_APR",
+									"Service": "/mypanmdk/Services/mypan.service"
+								}
+							},
+							"_Name": "PAN_Number",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"Caption": "Awarded_Vendor",
+							"_Name": "Awarded_Vendor",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Vendor_Name",
+							"_Name": "Vendor_Name",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Vendor_Location",
+							"_Name": "Vendor_Location",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Technically_Approved",
+							"_Name": "Technically_Approved",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Client_Approved",
+							"_Name": "Client_Approved",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Original_quote",
+							"_Name": "Original_quote",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Final_Quote",
+							"_Name": "Final_Quote",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Order_amount_OR_Split_order_amount",
+							"_Name": "Order_amount_OR_Split_order_amount",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Discount_Amount",
+							"_Name": "Discount_Amount",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Discount_percentage",
+							"_Name": "Discount_percentage",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Rank",
+							"_Name": "Rank",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Proposed_Vendor_Name",
+							"_Name": "Proposed_Vendor_Name",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Supplier_Origin_State",
+							"_Name": "Supplier_Origin_State",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Destination_State_BKTShipDASHto_LocationBKT",
+							"_Name": "Destination_State_BKTShipDASHto_LocationBKT",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Vendor_GST_Number",
+							"_Name": "Vendor_GST_Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Vendor_CE_Score",
+							"_Name": "Vendor_CE_Score",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Date",
+							"_Name": "Vendor_CE_Date",
+							"Caption": "Vendor_CE_Date",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "Vendor_PE_Score",
+							"_Name": "Vendor_PE_Score",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Vendor_PE_Date",
+							"_Name": "Vendor_PE_Date",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Vendor_Contact_PersonDASH1",
+							"_Name": "Vendor_Contact_PersonDASH1",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Vendor_Contact_PersonDASH2",
+							"_Name": "Vendor_Contact_PersonDASH2",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Technical_Committee_who_cleared_the_proposal",
+							"_Name": "Technical_Committee_who_cleared_the_proposal",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Commercial_Committee_who_cleared_the_proposal",
+							"_Name": "Commercial_Committee_who_cleared_the_proposal",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Vendor_References_to_be_displayed_in_Order",
+							"_Name": "Vendor_References_to_be_displayed_in_Order",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Shortlisted_Vendors_Response_summary",
+							"_Name": "Shortlisted_Vendors_Response_summary",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Order_Value_BKTIn_Project_CurrencyBKT",
+							"_Name": "Order_Value_BKTIn_Project_CurrencyBKT",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Order_Value_BKTIn_Bid_CurrencyBKT",
+							"_Name": "Order_Value_BKTIn_Bid_CurrencyBKT",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Vendor_Final_Quotation_Date",
+							"_Name": "Vendor_Final_Quotation_Date",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Vendor_Final_Quotation_Amount",
+							"_Name": "Vendor_Final_Quotation_Amount",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Project_CurrencyORBase_Currency",
+							"_Name": "Project_CurrencyORBase_Currency",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Order_CurrencyORBid_currency",
+							"_Name": "Order_CurrencyORBid_currency",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Incoterms",
+							"_Name": "Incoterms",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Number_of_Back_to_back_Terms_agreed_with_Vendor_as_per_GPC_OR_GCC",
+							"_Name": "Number_of_Back_to_back_Terms_agreed_with_Vendor_as_per_GPC_OR_GCC",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Details_of_deviated_or_better_terms_agreed_with_the_Vendor",
+							"_Name": "Details_of_deviated_or_better_terms_agreed_with_the_Vendor",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Market_Scenario_and_Demand",
+							"_Name": "Market_Scenario_and_Demand",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Companys_Position_and_Market_dynamics_of_this_purchase",
+							"_Name": "Companys_Position_and_Market_dynamics_of_this_purchase",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Should_Be_Cost_estimated",
+							"_Name": "Should_Be_Cost_estimated",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Highlights_of_this_proposal_and_Price_Justification_for_this_proposal",
+							"_Name": "Highlights_of_this_proposal_and_Price_Justification_for_this_proposal",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Price_Escalation_Agreed_if_any",
+							"_Name": "Price_Escalation_Agreed_if_any",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Particulars_of_any_Free_Service_OR_Supply_Guarantees_OR_Warrant_yfrom_Vendor",
+							"_Name": "Particulars_of_any_Free_Service_OR_Supply_Guarantees_OR_Warrant_yfrom_Vendor",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Transportation",
+							"_Name": "Transportation",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Logistics_Cost",
+							"_Name": "Logistics_Cost",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Delivery_Schedule",
+							"_Name": "Delivery_Schedule",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Tax_Details",
+							"_Name": "Tax_Details",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Additional_Remarks",
+							"_Name": "Additional_Remarks",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ABG",
+							"_Name": "ABG",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ABG_Value",
+							"_Name": "ABG_Value",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CPBG",
+							"_Name": "CPBG",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CPBG_Value",
+							"_Name": "CPBG_Value",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Scope_and_Responsibilities",
+							"_Name": "Scope_and_Responsibilities",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Commercial_Terms",
+							"_Name": "Commercial_Terms",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Compliance_Terms",
+							"_Name": "Compliance_Terms",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Others",
+							"_Name": "Others",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PAN_vendor_data_APR_Create",
+	"PrefersLargeCaption": true
+}

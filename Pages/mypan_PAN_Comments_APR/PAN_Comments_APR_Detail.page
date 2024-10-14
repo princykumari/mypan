@@ -1,0 +1,92 @@
+{
+	"Caption": "$(L,PAN_Comments_APR_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/mypanmdk/Services/mypan.service",
+		"EntitySet": "PAN_Comments_APR",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/mypanmdk/Actions/mypan/PAN_Comments_APR/NavToPAN_Comments_APR_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/mypanmdk/Rules/mypan/PAN_Comments_APR/PAN_Comments_APR_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{createdAt}",
+						"Subhead": "{createdBy}",
+						"BodyText": "",
+						"Footnote": "{modifiedBy}",
+						"Description": "{modifiedAt}",
+						"StatusText": "{PAN_Number}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{user}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Created On",
+							"Value": "{createdAt}"
+						},
+						{
+							"KeyName": "Created By",
+							"Value": "{createdBy}"
+						},
+						{
+							"KeyName": "Changed On",
+							"Value": "{modifiedAt}"
+						},
+						{
+							"KeyName": "Changed By",
+							"Value": "{modifiedBy}"
+						},
+						{
+							"KeyName": "PAN_Number",
+							"Value": "{PAN_Number}"
+						},
+						{
+							"KeyName": "user",
+							"Value": "{user}"
+						},
+						{
+							"KeyName": "Comments",
+							"Value": "{Comments}"
+						},
+						{
+							"KeyName": "status",
+							"Value": "{status}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PAN_Comments_APR_Detail",
+	"PrefersLargeCaption": true
+}

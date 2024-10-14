@@ -1,0 +1,21 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "PAN_attachments_APR",
+        "Service": "/mypanmdk/Services/mypan.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "PAN_Number": "#Control:PAN_Number/#SelectedValue",
+        "mediaType": "#Control:mediaType/#Value",
+        "fileName": "#Control:fileName/#Value",
+        "size": "#Control:size/#Value",
+        "url": "#Control:url/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/mypanmdk/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/mypanmdk/Actions/UpdateEntityFailureMessage.action"
+}

@@ -1,0 +1,20 @@
+{
+    "PopoverItems": [{
+            "Title": "Add PAN_vendor_response_APR",
+            "OnPress": "/mypanmdk/Actions/mypan/PAN_vendor_data_APR/NavToPAN_vendor_data_APR_CreatePAN_vendor_response_APR.action"
+        },
+        {
+            "Title": "Add PAN_PAYMENT_TERM_DETAILS_APR",
+            "OnPress": "/mypanmdk/Actions/mypan/PAN_vendor_data_APR/NavToPAN_vendor_data_APR_CreatePAN_PAYMENT_TERM_DETAILS_APR.action"
+        },
+        {
+            "Title": "Add PAN_PRICE_DETAILS_APR",
+            "OnPress": "/mypanmdk/Actions/mypan/PAN_vendor_data_APR/NavToPAN_vendor_data_APR_CreatePAN_PRICE_DETAILS_APR.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/mypanmdk/Rules/mypan/PAN_vendor_data_APR/PAN_vendor_data_APR_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

@@ -1,0 +1,88 @@
+{
+	"Caption": "$(L,PAN_WEB_EVENT_APR_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/mypanmdk/Services/mypan.service",
+		"EntitySet": "PAN_WEB_EVENT_APR",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/mypanmdk/Actions/mypan/PAN_WEB_EVENT_APR/NavToPAN_WEB_EVENT_APR_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/mypanmdk/Rules/mypan/PAN_WEB_EVENT_APR/PAN_WEB_EVENT_APR_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{idd}",
+						"Subhead": "{PAN_Number}",
+						"BodyText": "",
+						"Footnote": "{number}",
+						"Description": "{eventNo}",
+						"StatusText": "{date}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{numberOfVendorsParticipated}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "idd",
+							"Value": "{idd}"
+						},
+						{
+							"KeyName": "PAN_Number",
+							"Value": "{PAN_Number}"
+						},
+						{
+							"KeyName": "eventNo",
+							"Value": "{eventNo}"
+						},
+						{
+							"KeyName": "number",
+							"Value": "{number}"
+						},
+						{
+							"KeyName": "date",
+							"Value": "{date}"
+						},
+						{
+							"KeyName": "numberOfVendorsParticipated",
+							"Value": "{numberOfVendorsParticipated}"
+						},
+						{
+							"KeyName": "l1AmountObtained",
+							"Value": "{l1AmountObtained}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PAN_WEB_EVENT_APR_Detail",
+	"PrefersLargeCaption": true
+}

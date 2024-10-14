@@ -1,0 +1,16 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/mypanmdk/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/mypanmdk/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Payment_method": "#Control:Payment_method/#Value"
+    },
+    "Target": {
+        "EntitySet": "PAN_Payment_Method_Drop_APR",
+        "Service": "/mypanmdk/Services/mypan.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

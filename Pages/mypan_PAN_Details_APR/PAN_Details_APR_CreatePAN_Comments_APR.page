@@ -1,0 +1,69 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/mypanmdk/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel"
+			},
+			{
+				"OnPress": "/mypanmdk/Actions/mypan/PAN_Details_APR/PAN_Details_APR_CreatePAN_Comments_APR.action",
+				"Position": "Right",
+				"SystemItem": "Save"
+			}
+		]
+	},
+	"Caption": "$(L,Create_PAN_Comments_APR)",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "PAN_Number",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"IsEditable": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"PickerItems": {
+								"DisplayValue": "{PAN_Number}",
+								"ReturnValue": "{PAN_Number}",
+								"Target": {
+									"EntitySet": "PAN_Details_APR",
+									"Service": "/mypanmdk/Services/mypan.service"
+								}
+							},
+							"_Name": "PAN_Number",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"Value": "{PAN_Number}"
+						},
+						{
+							"Caption": "user",
+							"_Name": "user",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Comments",
+							"_Name": "Comments",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "status",
+							"_Name": "status",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PAN_Details_APR_CreatePAN_Comments_APR",
+	"PrefersLargeCaption": true
+}

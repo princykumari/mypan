@@ -1,0 +1,23 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "PAN_TYPE_APR",
+        "Service": "/mypanmdk/Services/mypan.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "idd": "#Control:idd/#Value",
+        "PAN_Number": "#Control:PAN_Number/#SelectedValue",
+        "typeNo": "#Control:typeNo/#Value",
+        "required": "#Control:required/#Value",
+        "submittedOn": "#Control:submittedOn/#Value",
+        "receivedOn": "#Control:receivedOn/#Value",
+        "timeTakenForApproval": "#Control:timeTakenForApproval/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/mypanmdk/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/mypanmdk/Actions/UpdateEntityFailureMessage.action"
+}

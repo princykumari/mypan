@@ -1,0 +1,23 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "PAN_WEB_EVENT_APR",
+        "Service": "/mypanmdk/Services/mypan.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "idd": "#Control:idd/#Value",
+        "PAN_Number": "#Control:PAN_Number/#SelectedValue",
+        "eventNo": "#Control:eventNo/#Value",
+        "number": "#Control:number/#Value",
+        "date": "#Control:date/#Value",
+        "numberOfVendorsParticipated": "#Control:numberOfVendorsParticipated/#Value",
+        "l1AmountObtained": "#Control:l1AmountObtained/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/mypanmdk/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/mypanmdk/Actions/UpdateEntityFailureMessage.action"
+}

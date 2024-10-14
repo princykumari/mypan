@@ -1,0 +1,100 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/mypanmdk/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel"
+			},
+			{
+				"OnPress": "/mypanmdk/Actions/mypan/PAN_PAYMENT_TERM_DETAILS_APR/PAN_PAYMENT_TERM_DETAILS_APR_CreateEntity.action",
+				"Position": "Right",
+				"SystemItem": "Save"
+			}
+		]
+	},
+	"Caption": "$(L,Create_PAN_PAYMENT_TERM_DETAILS_APR_Detail)",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "Proposed_Vendor_Code",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"PickerItems": {
+								"DisplayValue": "{Proposed_Vendor_Code}",
+								"ReturnValue": "{Proposed_Vendor_Code}",
+								"Target": {
+									"EntitySet": "PAN_vendor_data_APR",
+									"Service": "/mypanmdk/Services/mypan.service"
+								}
+							},
+							"_Name": "Proposed_Vendor_Code",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"Caption": "PAN_Number",
+							"_Name": "PAN_Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "iddd",
+							"_Name": "iddd",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "slNo",
+							"KeyboardType": "Number",
+							"_Name": "slNo",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Payment_methord",
+							"_Name": "Payment_methord",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"Value": "RTGS payment"
+						},
+						{
+							"Caption": "Percentage",
+							"_Name": "Percentage",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Description",
+							"_Name": "Description",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Due_date",
+							"_Name": "Due_date",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Mandatory_Documents_OR_Submissions",
+							"_Name": "Mandatory_Documents_OR_Submissions",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "To_be_certified_in_Company",
+							"_Name": "To_be_certified_in_Company",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PAN_PAYMENT_TERM_DETAILS_APR_Create",
+	"PrefersLargeCaption": true
+}

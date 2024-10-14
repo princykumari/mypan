@@ -1,0 +1,148 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable",
+			"Sections": [
+				{
+					"Header": {
+						"_Name": "SectionHeader_mypan",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "mypan",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Buttons": [
+						{
+							"OnPress": "/mypanmdk/Actions/mypan/PAN_attachments_APR/NavToPAN_attachments_APR_List.action",
+							"Alignment": "Center",
+							"Title": "PAN_attachments_APR",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/mypanmdk/Actions/mypan/PAN_Comments_APR/NavToPAN_Comments_APR_List.action",
+							"Alignment": "Center",
+							"Title": "PAN_Comments_APR",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/mypanmdk/Actions/mypan/PAN_Details_APR/NavToPAN_Details_APR_List.action",
+							"Alignment": "Center",
+							"Title": "PAN_Details_APR",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/mypanmdk/Actions/mypan/PAN_Payment_Method_Drop_APR/NavToPAN_Payment_Method_Drop_APR_List.action",
+							"Alignment": "Center",
+							"Title": "PAN_Payment_Method_Drop_APR",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/mypanmdk/Actions/mypan/PAN_PAYMENT_TERM_DETAILS_APR/NavToPAN_PAYMENT_TERM_DETAILS_APR_List.action",
+							"Alignment": "Center",
+							"Title": "PAN_PAYMENT_TERM_DETAILS_APR",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/mypanmdk/Actions/mypan/PAN_PRICE_DETAILS_APR/NavToPAN_PRICE_DETAILS_APR_List.action",
+							"Alignment": "Center",
+							"Title": "PAN_PRICE_DETAILS_APR",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/mypanmdk/Actions/mypan/PAN_TYPE_APR/NavToPAN_TYPE_APR_List.action",
+							"Alignment": "Center",
+							"Title": "PAN_TYPE_APR",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/mypanmdk/Actions/mypan/PAN_vendor_data_APR/NavToPAN_vendor_data_APR_List.action",
+							"Alignment": "Center",
+							"Title": "PAN_vendor_data_APR",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/mypanmdk/Actions/mypan/PAN_vendor_response_APR/NavToPAN_vendor_response_APR_List.action",
+							"Alignment": "Center",
+							"Title": "PAN_vendor_response_APR",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/mypanmdk/Actions/mypan/PAN_WEB_EVENT_APR/NavToPAN_WEB_EVENT_APR_List.action",
+							"Alignment": "Center",
+							"Title": "PAN_WEB_EVENT_APR",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/mypanmdk/Actions/mypan/PAN_WORKFLOW_HISTORY_APR/NavToPAN_WORKFLOW_HISTORY_APR_List.action",
+							"Alignment": "Center",
+							"Title": "PAN_WORKFLOW_HISTORY_APR",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						},
+						{
+							"OnPress": "/mypanmdk/Actions/mypan/vendorTaxDetails_APR/NavTovendorTaxDetails_APR_List.action",
+							"Alignment": "Center",
+							"Title": "vendorTaxDetails_APR",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"_Type": "ButtonTable.Type.Button"
+						}
+					],
+					"_Name": "SectionButtonTable_mypan",
+					"_Type": "Section.Type.ButtonTable"
+				}
+			]
+		}
+	],
+	"_Name": "Main",
+	"_Type": "Page",
+	"Caption": "Main",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "User Menu",
+				"Icon": "sap-icon://customer",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/mypanmdk/Actions/Application/UserMenuPopover.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

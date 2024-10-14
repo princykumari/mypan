@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.OfflineOData.Close",
+    "Service": "/mypanmdk/Services/mypan.service",
+    "Force": true,
+    "ActionResult": {
+        "_Name": "close"
+    },
+    "OnSuccess": "/mypanmdk/Actions/mypan/Service/CloseOfflineSuccessMessage.action",
+    "OnFailure": "/mypanmdk/Actions/mypan/Service/CloseOfflineFailureMessage.action"
+}

@@ -1,0 +1,61 @@
+{
+	"Credential": "cf",
+	"Template": {
+		"Id": "@ext-mdkvsc-npm-dev/generator-mdk",
+		"Name": "CRUD",
+		"Version": "0.0.1"
+	},
+	"CF": {
+		"Target": "https://api.cf.us10-001.hana.ondemand.com",
+		"Organization": "3dc569ba-a02e-4ad3-82d3-547167cf2a53",
+		"Space": "6f9a4e4b-7249-4925-a721-a44c79a2f59d",
+		"Deploy": {
+			"Description": "",
+			"WebClient": {
+				"Runtime": "production",
+				"URL": "https://mdk-webclient-runtime.cfapps.us10.hana.ondemand.com/runtime/"
+			},
+			"Destination": [
+				{
+					"CF": "mypan",
+					"MDK": "mypan",
+					"URL": ""
+				}
+			],
+			"Name": "ns.mypanmdk",
+			"Version": "1.0.0",
+			"AppRouter": "standalone",
+			"Auth": true,
+			"URL": "https://24c690a9trial-dev-nsmypanmdk-approuter.cfapps.us10-001.hana.ondemand.com/nsmypanmdk"
+		}
+	},
+	"MobileService": {
+		"Type": "standard",
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.us10.hana.ondemand.com/cockpit/v1/org/3dc569ba-a02e-4ad3-82d3-547167cf2a53/space/6f9a4e4b-7249-4925-a721-a44c79a2f59d",
+		"AppId": "com.sap.mdk",
+		"Destination": [
+			"com.sap.edm.sampleservice.v4",
+			"serviceurl",
+			"sampleodata",
+			"mypan"
+		]
+	},
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": "sapmobilesvcs://?AppId=com.sap.mdk&ClientId=c69bbc1d-7688-4c03-ae83-7ac69578ae3e&ServerUrl=https://24c690a9trial-dev-com-sap-mdk.cfapps.us10-001.hana.ondemand.com&SapCloudPlatformEndpoint=https://24c690a9trial-dev-com-sap-mdk.cfapps.us10-001.hana.ondemand.com&AuthorizationEndpointUrl=https://24c690a9trial-dev-com-sap-mdk.cfapps.us10-001.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://24c690a9trial-dev-com-sap-mdk.cfapps.us10-001.hana.ondemand.com&TokenUrl=https://24c690a9trial-dev-com-sap-mdk.cfapps.us10-001.hana.ondemand.com/oauth2/api/v1/token&multiUser=false"
+	},
+	"LCAP": {
+		"FullName": "",
+		"Service": [],
+		"sourceTemplate": {
+			"id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
+			"version": "1.40.12"
+		}
+	},
+	"Build": {
+		"SourceMap": true,
+		"TSTarget": "es6",
+		"WMF": true
+	}
+}

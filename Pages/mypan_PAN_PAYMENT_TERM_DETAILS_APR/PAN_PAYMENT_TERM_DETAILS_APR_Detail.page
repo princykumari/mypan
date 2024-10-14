@@ -1,0 +1,100 @@
+{
+	"Caption": "$(L,PAN_PAYMENT_TERM_DETAILS_APR_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/mypanmdk/Services/mypan.service",
+		"EntitySet": "PAN_PAYMENT_TERM_DETAILS_APR",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/mypanmdk/Actions/mypan/PAN_PAYMENT_TERM_DETAILS_APR/NavToPAN_PAYMENT_TERM_DETAILS_APR_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/mypanmdk/Rules/mypan/PAN_PAYMENT_TERM_DETAILS_APR/PAN_PAYMENT_TERM_DETAILS_APR_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{Proposed_Vendor_Code}",
+						"Subhead": "{PAN_Number}",
+						"BodyText": "",
+						"Footnote": "{slNo}",
+						"Description": "{iddd}",
+						"StatusText": "{Payment_methord}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{Percentage}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Proposed_Vendor_Code",
+							"Value": "{Proposed_Vendor_Code}"
+						},
+						{
+							"KeyName": "PAN_Number",
+							"Value": "{PAN_Number}"
+						},
+						{
+							"KeyName": "iddd",
+							"Value": "{iddd}"
+						},
+						{
+							"KeyName": "slNo",
+							"Value": "{slNo}"
+						},
+						{
+							"KeyName": "Payment_methord",
+							"Value": "{Payment_methord}"
+						},
+						{
+							"KeyName": "Percentage",
+							"Value": "{Percentage}"
+						},
+						{
+							"KeyName": "Description",
+							"Value": "{Description}"
+						},
+						{
+							"KeyName": "Due_date",
+							"Value": "{Due_date}"
+						},
+						{
+							"KeyName": "Mandatory_Documents_OR_Submissions",
+							"Value": "{Mandatory_Documents_OR_Submissions}"
+						},
+						{
+							"KeyName": "To_be_certified_in_Company",
+							"Value": "{To_be_certified_in_Company}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PAN_PAYMENT_TERM_DETAILS_APR_Detail",
+	"PrefersLargeCaption": true
+}

@@ -1,0 +1,124 @@
+{
+	"Caption": "$(L,Update_PAN_PRICE_DETAILS_APR_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/mypanmdk/Services/mypan.service",
+		"EntitySet": "PAN_PRICE_DETAILS_APR",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/mypanmdk/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/mypanmdk/Actions/mypan/PAN_PRICE_DETAILS_APR/PAN_PRICE_DETAILS_APR_UpdateEntity.action"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "Proposed_Vendor_Code",
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSelectedSectionEnabled": true,
+							"PickerItems": {
+								"DisplayValue": "{Proposed_Vendor_Code}",
+								"ReturnValue": "{Proposed_Vendor_Code}",
+								"Target": {
+									"EntitySet": "PAN_vendor_data_APR",
+									"Service": "/mypanmdk/Services/mypan.service"
+								}
+							},
+							"Value": "{Proposed_Vendor_Code}",
+							"_Name": "Proposed_Vendor_Code",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"Caption": "PAN_Number",
+							"_Name": "PAN_Number",
+							"Value": "{PAN_Number}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Item_Code",
+							"_Name": "Item_Code",
+							"Value": "{Item_Code}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "HSN_OR_SAC_Code",
+							"_Name": "HSN_OR_SAC_Code",
+							"Value": "{HSN_OR_SAC_Code}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "extendedPrice",
+							"_Name": "extendedPrice",
+							"Value": "{extendedPrice}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Item_Short_Description",
+							"_Name": "Item_Short_Description",
+							"Value": "{Item_Short_Description}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "UOM",
+							"_Name": "UOM",
+							"Value": "{UOM}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Quantity",
+							"_Name": "Quantity",
+							"Value": "{Quantity}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Unit_Price",
+							"_Name": "Unit_Price",
+							"Value": "{Unit_Price}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Amount",
+							"_Name": "Amount",
+							"Value": "{Amount}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Indian_Tax_PER",
+							"_Name": "Indian_Tax_PER",
+							"Value": "{Indian_Tax_PER}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Quantity_Over_Delivery_Tolerance",
+							"_Name": "Quantity_Over_Delivery_Tolerance",
+							"Value": "{Quantity_Over_Delivery_Tolerance}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PAN_PRICE_DETAILS_APR_Edit",
+	"PrefersLargeCaption": true
+}

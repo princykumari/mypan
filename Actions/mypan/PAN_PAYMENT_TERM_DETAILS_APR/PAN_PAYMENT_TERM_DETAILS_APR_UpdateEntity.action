@@ -1,0 +1,26 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "PAN_PAYMENT_TERM_DETAILS_APR",
+        "Service": "/mypanmdk/Services/mypan.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "Proposed_Vendor_Code": "#Control:Proposed_Vendor_Code/#SelectedValue",
+        "PAN_Number": "#Control:PAN_Number/#Value",
+        "iddd": "#Control:iddd/#Value",
+        "slNo": "#Control:slNo/#Value",
+        "Payment_methord": "#Control:Payment_methord/#Value",
+        "Percentage": "#Control:Percentage/#Value",
+        "Description": "#Control:Description/#Value",
+        "Due_date": "#Control:Due_date/#Value",
+        "Mandatory_Documents_OR_Submissions": "#Control:Mandatory_Documents_OR_Submissions/#Value",
+        "To_be_certified_in_Company": "#Control:To_be_certified_in_Company/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/mypanmdk/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/mypanmdk/Actions/UpdateEntityFailureMessage.action"
+}

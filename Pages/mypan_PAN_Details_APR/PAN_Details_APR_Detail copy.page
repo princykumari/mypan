@@ -1,0 +1,445 @@
+{
+	"Caption": "$(L,PAN_Details_APR_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/mypanmdk/Services/mypan.service",
+		"EntitySet": "PAN_Details_APR",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/mypanmdk/Actions/mypan/PAN_Details_APR/NavToPAN_Details_APR_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/mypanmdk/Actions/mypan/PAN_Details_APR/PAN_Details_APR_DetailPopover.action",
+				"Position": "Right",
+				"Caption": "More"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{task_id}",
+						"Subhead": "{PAN_Number}",
+						"BodyText": "",
+						"Footnote": "{SBU}",
+						"Description": "{SBG}",
+						"StatusText": "{BUORPurchasing_Group}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{Plant_Code}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "PAN_Number",
+							"Value": "{PAN_Number}"
+						},
+						{
+							"KeyName": "SBG",
+							"Value": "{SBG}"
+						},
+						{
+							"KeyName": "SBU",
+							"Value": "{SBU}"
+						},
+						{
+							"KeyName": "BUORPurchasing_Group",
+							"Value": "{BUORPurchasing_Group}"
+						},
+						{
+							"KeyName": "Plant_Code",
+							"Value": "{Plant_Code}"
+						},
+						{
+							"KeyName": "Project_Description",
+							"Value": "{Project_Description}"
+						},
+						{
+							"KeyName": "PR_NumberBKTsBKT",
+							"Value": "{PR_NumberBKTsBKT}"
+						},
+						{
+							"KeyName": "Subject_of_ProposalOROrder",
+							"Value": "{Subject_of_ProposalOROrder}"
+						},
+						{
+							"KeyName": "Previous_PAN_References",
+							"Value": "{Previous_PAN_References}"
+						},
+						{
+							"KeyName": "Split_OrderORNo_of_vendors",
+							"Value": "{Split_OrderORNo_of_vendors}"
+						},
+						{
+							"KeyName": "SOP_Type",
+							"Value": "{SOP_Type}"
+						},
+						{
+							"KeyName": "Order_Type_OR_Document_tyFuuidpe",
+							"Value": "{Order_Type_OR_Document_tyFuuidpe}"
+						},
+						{
+							"KeyName": "Asset_Type",
+							"Value": "{Asset_Type}"
+						},
+						{
+							"KeyName": "Nature_of_Transaction",
+							"Value": "{Nature_of_Transaction}"
+						},
+						{
+							"KeyName": "Order_Location_OR_Plant",
+							"Value": "{Order_Location_OR_Plant}"
+						},
+						{
+							"KeyName": "Base_line_spend",
+							"Value": "{Base_line_spend}"
+						},
+						{
+							"KeyName": "Project_CurrencyORBase_Currency",
+							"Value": "{Project_CurrencyORBase_Currency}"
+						},
+						{
+							"KeyName": "Order_CurrencyORBid_currency",
+							"Value": "{Order_CurrencyORBid_currency}"
+						},
+						{
+							"KeyName": "Final_proposed_Value",
+							"Value": "{Final_proposed_Value}"
+						},
+						{
+							"KeyName": "Savings_achieved_btw_initial_and_final_quote",
+							"Value": "{Savings_achieved_btw_initial_and_final_quote}"
+						},
+						{
+							"KeyName": "Savings_against_base_line_spend_of_RFP",
+							"Value": "{Savings_against_base_line_spend_of_RFP}"
+						},
+						{
+							"KeyName": "Number_of_Vendors_Shortlisted_for_RFP",
+							"Value": "{Number_of_Vendors_Shortlisted_for_RFP}"
+						},
+						{
+							"KeyName": "Number_of_Vendors_Technically_Qualified",
+							"Value": "{Number_of_Vendors_Technically_Qualified}"
+						},
+						{
+							"KeyName": "Required_at_Site_Date",
+							"Value": "{Required_at_Site_Date}"
+						},
+						{
+							"KeyName": "RFP_Number",
+							"Value": "{RFP_Number}"
+						},
+						{
+							"KeyName": "RFP_Publish_Date",
+							"Value": "{RFP_Publish_Date}"
+						},
+						{
+							"KeyName": "Time_Taken_for_FinalizationDASHIn_DAYS",
+							"Value": "{Time_Taken_for_FinalizationDASHIn_DAYS}"
+						},
+						{
+							"KeyName": "status",
+							"Value": "{status}"
+						},
+						{
+							"KeyName": "statusInd",
+							"Value": "{statusInd}"
+						},
+						{
+							"KeyName": "created_by",
+							"Value": "{created_by}"
+						},
+						{
+							"KeyName": "task_id",
+							"Value": "{task_id}"
+						},
+						{
+							"KeyName": "type",
+							"Value": "{type}"
+						},
+						{
+							"KeyName": "status_a",
+							"Value": "{status_a}"
+						},
+						{
+							"KeyName": "switch_control",
+							"Value": "{switch_control}"
+						},
+						{
+							"KeyName": "ProjectId",
+							"Value": "{ProjectId}"
+						},
+						{
+							"KeyName": "number_of_vendors_invited",
+							"Value": "{number_of_vendors_invited}"
+						},
+						{
+							"KeyName": "total_levels_of_approval",
+							"Value": "{total_levels_of_approval}"
+						},
+						{
+							"KeyName": "Current_level_of_approval",
+							"Value": "{Current_level_of_approval}"
+						},
+						{
+							"KeyName": "Sap_workitem_id",
+							"Value": "{Sap_workitem_id}"
+						},
+						{
+							"KeyName": "Comments",
+							"Value": "{Comments}"
+						},
+						{
+							"KeyName": "submitted_by",
+							"Value": "{submitted_by}"
+						},
+						{
+							"KeyName": "submitted_date",
+							"Value": "{submitted_date}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "tab1totab2",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{eventNo}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{idd}",
+						"Footnote": "{number}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{date}",
+						"Subhead": "{PAN_Number}",
+						"SubstatusText": "{numberOfVendorsParticipated}",
+						"OnPress": "/mypanmdk/Actions/mypan/PAN_WEB_EVENT_APR/NavToPAN_WEB_EVENT_APR_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/tab1totab2",
+						"Service": "/mypanmdk/Services/mypan.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "tab1totab3",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{typeNo}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{idd}",
+						"Footnote": "{required}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{submittedOn}",
+						"Subhead": "{PAN_Number}",
+						"SubstatusText": "{receivedOn}",
+						"OnPress": "/mypanmdk/Actions/mypan/PAN_TYPE_APR/NavToPAN_TYPE_APR_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/tab1totab3",
+						"Service": "/mypanmdk/Services/mypan.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "tab1toWORKFLOW_HISTORY",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{PAN_Number}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{Title}",
+						"Footnote": "{Employee_ID}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{level}",
+						"Subhead": "{idd}",
+						"SubstatusText": "{Approved_by}",
+						"OnPress": "/mypanmdk/Actions/mypan/PAN_WORKFLOW_HISTORY_APR/NavToPAN_WORKFLOW_HISTORY_APR_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/tab1toWORKFLOW_HISTORY",
+						"Service": "/mypanmdk/Services/mypan.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "tab1topdf",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{createdBy}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "/mypanmdk/Services/mypan.service/{@odata.readLink}/content"
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{fileName}",
+						"Footnote": "{modifiedAt}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{modifiedBy}",
+						"Subhead": "{createdAt}",
+						"SubstatusText": "{PAN_Number}",
+						"OnPress": "/mypanmdk/Actions/mypan/PAN_attachments_APR/NavToPAN_attachments_APR_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/tab1topdf",
+						"Service": "/mypanmdk/Services/mypan.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "tab1tovendor_data",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{PAN_Number}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{Vendor_Name}",
+						"Footnote": "{Awarded_Vendor}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{Vendor_Location}",
+						"Subhead": "{Proposed_Vendor_Code}",
+						"SubstatusText": "{Technically_Approved}",
+						"OnPress": "/mypanmdk/Actions/mypan/PAN_vendor_data_APR/NavToPAN_vendor_data_APR_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/tab1tovendor_data",
+						"Service": "/mypanmdk/Services/mypan.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "tab1tocom",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{modifiedAt}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{createdAt}",
+						"Footnote": "{modifiedBy}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{PAN_Number}",
+						"Subhead": "{createdBy}",
+						"SubstatusText": "{user}",
+						"OnPress": "/mypanmdk/Actions/mypan/PAN_Comments_APR/NavToPAN_Comments_APR_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/tab1tocom",
+						"Service": "/mypanmdk/Services/mypan.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"PAN_WEB_EVENT_APR",
+				"PAN_TYPE_APR",
+				"PAN_WORKFLOW_HISTORY_APR",
+				"PAN_attachments_APR",
+				"PAN_vendor_data_APR",
+				"PAN_Comments_APR"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PAN_Details_APR_Detail",
+	"PrefersLargeCaption": true
+}

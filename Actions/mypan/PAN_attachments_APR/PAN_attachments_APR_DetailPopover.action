@@ -1,0 +1,12 @@
+{
+    "PopoverItems": [{
+            "Title": "Open Document",
+            "OnPress": "/mypanmdk/Actions/mypan/PAN_attachments_APR/PAN_attachments_APR_OpenDocument.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/mypanmdk/Rules/mypan/PAN_attachments_APR/PAN_attachments_APR_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/mypanmdk/Pages/mypan_PAN_PAYMENT_TERM_DETAILS_APR/PAN_PAYMENT_TERM_DETAILS_APR_Edit.page",
+    "_Type": "Action.Type.Navigation"
+}

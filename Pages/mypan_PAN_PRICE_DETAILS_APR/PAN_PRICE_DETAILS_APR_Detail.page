@@ -1,0 +1,108 @@
+{
+	"Caption": "$(L,PAN_PRICE_DETAILS_APR_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/mypanmdk/Services/mypan.service",
+		"EntitySet": "PAN_PRICE_DETAILS_APR",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/mypanmdk/Actions/mypan/PAN_PRICE_DETAILS_APR/NavToPAN_PRICE_DETAILS_APR_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/mypanmdk/Rules/mypan/PAN_PRICE_DETAILS_APR/PAN_PRICE_DETAILS_APR_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{Proposed_Vendor_Code}",
+						"Subhead": "{PAN_Number}",
+						"BodyText": "",
+						"Footnote": "{HSN_OR_SAC_Code}",
+						"Description": "{Item_Code}",
+						"StatusText": "{extendedPrice}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{Item_Short_Description}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Proposed_Vendor_Code",
+							"Value": "{Proposed_Vendor_Code}"
+						},
+						{
+							"KeyName": "PAN_Number",
+							"Value": "{PAN_Number}"
+						},
+						{
+							"KeyName": "Item_Code",
+							"Value": "{Item_Code}"
+						},
+						{
+							"KeyName": "HSN_OR_SAC_Code",
+							"Value": "{HSN_OR_SAC_Code}"
+						},
+						{
+							"KeyName": "extendedPrice",
+							"Value": "{extendedPrice}"
+						},
+						{
+							"KeyName": "Item_Short_Description",
+							"Value": "{Item_Short_Description}"
+						},
+						{
+							"KeyName": "UOM",
+							"Value": "{UOM}"
+						},
+						{
+							"KeyName": "Quantity",
+							"Value": "{Quantity}"
+						},
+						{
+							"KeyName": "Unit_Price",
+							"Value": "{Unit_Price}"
+						},
+						{
+							"KeyName": "Amount",
+							"Value": "{Amount}"
+						},
+						{
+							"KeyName": "Indian_Tax_PER",
+							"Value": "{Indian_Tax_PER}"
+						},
+						{
+							"KeyName": "Quantity_Over_Delivery_Tolerance",
+							"Value": "{Quantity_Over_Delivery_Tolerance}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PAN_PRICE_DETAILS_APR_Detail",
+	"PrefersLargeCaption": true
+}

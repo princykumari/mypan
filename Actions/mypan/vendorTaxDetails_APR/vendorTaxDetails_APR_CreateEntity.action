@@ -1,0 +1,20 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/mypanmdk/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/mypanmdk/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Proposed_Vendor_Code": "#Control:Proposed_Vendor_Code/#Value",
+        "PAN_Number": "#Control:PAN_Number/#Value",
+        "Item_Code": "#Control:Item_Code/#Value",
+        "name": "#Control:name/#Value",
+        "value": "#Control:value/#Value"
+    },
+    "Target": {
+        "EntitySet": "vendorTaxDetails_APR",
+        "Service": "/mypanmdk/Services/mypan.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}
